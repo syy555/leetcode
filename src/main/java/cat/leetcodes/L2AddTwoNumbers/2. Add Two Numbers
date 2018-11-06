@@ -1,0 +1,17 @@
+
+# 2. Add Two Numbers
+You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
+
+You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+
+Example:
+
+Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
+Output: 7 -> 0 -> 8
+Explanation: 342 + 465 = 807.
+
+
+改题可以理解为两个正整数相加,这边要注意的case 是进位，以及某一个单一链表节点为空值的情况。
+
+例如如果case 是39+8072 则对应的input为：(9 -> 3) + (2 -> 7 -> 0 -> 8)
+两个节点相加的结果一定在0到18以内，且如果大于10要进位。另一个情况是最后两个节点如果相加大于10则最后要额外添加一个节点。剩下的就是简单的遍历，整体时间复杂度为0(n)
