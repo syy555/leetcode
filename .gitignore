@@ -2,7 +2,7 @@
 *.ipr
 *.iws
 *.hprof
-.idea/*
+.idea
 !.idea/codeStyles/
 .gradle
 local.properties
