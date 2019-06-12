@@ -1,20 +1,11 @@
 package cat.leetcodes
+import kotlinx.coroutines.*
 
-
-class test1 {
-
-    fun test1() {
-        test2("1",
-                {
-                },
-                {
-
-                })
-    }
-
-    private inline fun test2(string: String, dosth: (index: Int) -> Unit, dosth2: (index: Int) -> Unit) {
-        dosth(1)
-    }
-
+fun main() {
+//    GlobalScope.launch { // launch a new coroutine in background and continue
+//        delay(1000L) // non-blocking delay for 1 second (default time unit is ms)
+//        System.out.println("World!") // print after delay
+//    }
+//    System.out.println("Hello,") // main thread continues while coroutine is delayed
+//    Thread.sleep(2000L) // block main thread for 2 seconds to keep JVM alive
 }
-
